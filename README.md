@@ -71,12 +71,6 @@ For the best experience with full asset loading, run a local development server 
 
 ---
 
-##  License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
 ##  Author
 
 **Subash B**
