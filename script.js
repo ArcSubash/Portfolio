@@ -220,34 +220,114 @@ document.addEventListener('DOMContentLoaded', () => {
     const formMessage = document.getElementById('form-message');
 
     if (contactForm && formMessage) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             // Disable submit button and show loading state
             const submitBtn = contactForm.querySelector('.form-submit-btn');
             const originalBtnHTML = submitBtn.innerHTML;
+            
+            // Retrieve field values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Form validation
+            if (!name || !email || !subject || !message) {
+                formMessage.textContent = 'All fields are required.';
+                formMessage.className = 'form-message error';
+                formMessage.style.display = 'block';
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formMessage.textContent = 'Please enter a valid email address.';
+                formMessage.className = 'form-message error';
+                formMessage.style.display = 'block';
+                return;
+            }
+
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-circle-notch fa-spin"></i>';
 
-            // Simulate form submission API call
-            setTimeout(() => {
-                // Success path
-                formMessage.textContent = 'Thank you, your message has been sent successfully!';
-                formMessage.className = 'form-message success';
+            // Access Web3Forms API Key from environment variables
+            let accessKey = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+                ? import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+                : '';
 
-                // Clear form
-                contactForm.reset();
+            // Fallback for static file loading: fetch the local .env file dynamically
+            if (!accessKey) {
+                try {
+                    const envResponse = await fetch('.env');
+                    const envText = await envResponse.text();
+                    const match = envText.match(/VITE_WEB3FORMS_ACCESS_KEY\s*=\s*([^\s#]+)/);
+                    if (match && match[1]) {
+                        accessKey = match[1].trim();
+                    }
+                } catch (e) {
+                    // Fail silently and proceed to show the config error
+                }
+            }
 
-                // Re-enable button
+            if (!accessKey) {
+                formMessage.textContent = 'Access Key configuration error.';
+                formMessage.className = 'form-message error';
+                formMessage.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+                return;
+            }
+
+            try {
+                // Post details to Web3Forms API
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        access_key: accessKey,
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        "Form Subject": subject,
+                        message: message
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Success response
+                    formMessage.textContent = 'Thank you, your message has been sent successfully!';
+                    formMessage.className = 'form-message success';
+                    formMessage.style.display = 'block';
+                    contactForm.reset();
+                } else {
+                    // Error response from API
+                    formMessage.textContent = result.message || 'Something went wrong. Please try again.';
+                    formMessage.className = 'form-message error';
+                    formMessage.style.display = 'block';
+                }
+            } catch (error) {
+                // Network or fetch failed error
+                formMessage.textContent = 'Failed to submit form. Please check your network connection.';
+                formMessage.className = 'form-message error';
+                formMessage.style.display = 'block';
+            } finally {
+                // Re-enable submit button
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalBtnHTML;
 
-                // Hide success message after 5 seconds
+                // Hide status message after 5 seconds
                 setTimeout(() => {
                     formMessage.style.display = 'none';
                 }, 5000);
-
-            }, 1500);
+            }
         });
     }
 });
