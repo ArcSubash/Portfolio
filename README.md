@@ -8,13 +8,13 @@ A premium, production-quality, and interactive Personal Portfolio web applicatio
 ##  Features
 
 - **Dark/Light Theme Switching**: Features a glassmorphic design that defaults to the user's system preferences, allows manual toggling, and persists the theme preference in `localStorage`.
-- **Dynamic Typewriter Effect**: Real-time typing, pausing, and deleting animation showcasing key roles: *B.Tech IT Student*, *Frontend Developer*, *AI Enthusiast*, and *Prompt Engineer*.
-- **Interactive Technical Skill Progress**: Skills section displaying key competencies (Web Development, AI, Systems) with animated skill bars that fill up only when scrolled into view using the browser's native `IntersectionObserver`.
+- **Dynamic Typewriter Effect**: Real-time typing, pausing, and deleting animation showcasing key roles: *B.Tech IT Student*, *Full Stack Developer*, *Cybersecurity Enthusiast*, and *Vibe coder*.
+- **Interactive Technical Skill Progress**: Skills section displaying key competencies (Development & Languages, AI & Prompt Engineering, and Tools & Systems) with animated skill bars that fill up only when scrolled into view using the browser's native `IntersectionObserver`.
 - **Journey Timeline & Certifications**:
-  - Educational background detailing B.Tech in IT with CGPA (8.9/10).
+  - Educational background detailing B.Tech in IT with CGPA (8.96/10).
   - Internship experience in Full Stack Development.
   - Credentials-linked certification cards for Cisco Networking Academy (HTML/CSS/JS Essentials, Network Defense, Endpoint Security, Security and Connectivity Support, Introduction to Modern AI) and NPTEL (Python, Soft Skills).
-- **Projects Showcase Grid**: Modern grid displaying built applications (Landing Page, Portfolio Website, Temperature Converter, BMI Calculator, and Storytelling Sites) with custom visual indicators and links.
+- **Projects Showcase Grid**: Modern grid displaying built applications (Real-Time User Management System, Interactive Landing Pages, Expense Tracker, Portfolio Website, and Resume Shortlister) with custom visual indicators and links.
 - **Simulated Interactive Contact Form**: Fully validated form featuring a responsive button transition, loading/sending spinner, and dynamic success alert with automatic fade-out.
 - **Responsive Layout**: Designed with custom CSS variables, CSS Flexbox, and CSS Grid, ensuring compatibility across all screen sizes (mobile, tablet, desktop).
 - **Navigation Controls**:
@@ -83,4 +83,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 - **GitHub**: [@ArcSubash](https://github.com/ArcSubash)
 - **LinkedIn**: [Subash B](https://www.linkedin.com/in/subash11rc/)
 - **Email**: subash11rc@gmail.com
-# Portfolio

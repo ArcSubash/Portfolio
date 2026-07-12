@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Personal Portfolio of Subash B - B.Tech Information Technology Student, Full Stack Developer & Cybersecurity Enthusiast.">
+    <title>Subash B | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="logo-link">
+                <span class="logo-accent">&lt;</span>Subash<span class="logo-accent">/&gt;</span>
+            </a>
+
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle between dark and light theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <!-- Hamburger Menu for Mobile -->
+                <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <div class="hero-container container">
+                <div class="hero-content">
+                    <span class="welcome-tag">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight-gradient">Subash B</span></h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        B.Tech Information Technology student at SRM Easwari Engineering College.
+                        Passionate about full-stack web development, cybersecurity, and building practical projects.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://drive.google.com/file/d/1EdeNAvKmWH9Fm8uYl9vaZiMnzS88HnOU/view?usp=sharing"
+                            download class="btn btn-secondary" target="_blank"><i class="fa-solid fa-download"></i>
+                            Download Resume</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/ArcSubash" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/subash11rc/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:subash11rc@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-border">
+                        <img src="assets/avatar.png" alt="Subash B Avatar" class="hero-avatar">
+                    </div>
+                    <div class="badge badge-ai">
+                        <i class="fa-solid fa-server"></i>
+                        <span>Full Stack Dev</span>
+                    </div>
+                    <div class="badge badge-code">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll to About Me">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">01 / Profile</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-content grid-2">
+                    <div class="about-text scroll-reveal scroll-reveal-left">
+                        <p class="paragraph-large">
+                            I am a B.Tech Information Technology student with a strong interest in coding and computers.
+                            I am enthusiastic about full-stack web development, cybersecurity, and building practical
+                            projects,
+                            with a solid academic record and hands-on internship experience.
+                        </p>
+                        <p>
+                            I enjoy bridging the gap between design and functionality. I thrive in learning-focused
+                            environments
+                            where I can experiment with new technologies, develop full-stack applications, and secure
+                            systems.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-num">8.96</span>
+                                <span class="highlight-label">CGPA</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-num">5+</span>
+                                <span class="highlight-label">Projects Built</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-num">9+</span>
+                                <span class="highlight-label">Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-details scroll-reveal scroll-reveal-right">
+                        <div class="detail-card glass">
+                            <h3>Key Details</h3>
+                            <ul class="details-list">
+                                <li>
+                                    <span class="detail-name"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                    <span class="detail-value">Chennai, India</span>
+                                </li>
+                                <li>
+                                    <span class="detail-name"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                    <span class="detail-value"><a
+                                            href="mailto:subash11rc@gmail.com">subash11rc@gmail.com</a></span>
+                                </li>
+                                <li>
+                                    <span class="detail-name"><i class="fa-solid fa-graduation-cap"></i> Major:</span>
+                                    <span class="detail-value">Information Technology</span>
+                                </li>
+                                <li>
+                                    <span class="detail-name"><i class="fa-solid fa-laptop-code"></i> Status:</span>
+                                    <span class="detail-value">Student (SRM Easwari)</span>
+                                </li>
+                            </ul>
+                            <div class="detail-footer" style="display: flex; gap: 12px;">
+                                <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+                                <a href="E:\Projects\Personal Portfolio\assets\resume.pdf" download
+                                    class="btn btn-secondary btn-sm" target="_blank"><i
+                                        class="fa-solid fa-download"></i> Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="education-section section section-alt">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">02 / Journey</span>
+                    <h2 class="section-title">Education & Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="edu-certs-grid grid-2">
+                    <!-- Education & Experience Column -->
+                    <div class="edu-column scroll-reveal scroll-reveal-left">
+                        <h3 class="subsection-title"><i class="fa-solid fa-graduation-cap"></i> Education & Experience
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2025 - 2029 (Expected)</span>
+                                <h4 class="timeline-title">B.Tech, Information Technology</h4>
+                                <p class="timeline-subtitle">SRM Easwari Engineering College</p>
+                                <div class="timeline-detail">
+                                    <span class="score-badge">CGPA: 8.9</span>
+                                    <p>Focusing on software development, data structures, algorithm design, and core IT
+                                        technologies.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">1 Month (Self-Paced)</span>
+                                <h4 class="timeline-title">Full Stack Development Intern</h4>
+                                <p class="timeline-subtitle">Tamizhan Skills</p>
+                                <div class="timeline-detail">
+                                    <p>Completed a self-paced virtual internship covering full-stack web development
+                                        concepts and practical project work.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="certs-column scroll-reveal scroll-reveal-right">
+                        <h3 class="subsection-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                        <div class="certs-list">
+
+                            <!-- Cert 1: Cisco Netacad -->
+                            <div class="cert-card glass">
+                                <div class="cert-icon">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Cisco Networking Academy (Netacad)</h4>
+                                    <ol
+                                        style="margin-top: 6px; padding-left: 16px; font-size: 1rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 4px; font-weight: 600;">
+                                        <li>-> HTML, CSS, and JavaScript Essentials</li>
+                                        <li>-> Network Defense</li>
+                                        <li>-> Endpoint Security</li>
+                                        <li>-> Security and Connectivity Support</li>
+                                        <li>-> Introduction to Modern AI</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- Cert 2: NPTEL Python -->
+                            <div class="cert-card glass">
+                                <div class="cert-icon">
+                                    <i class="fa-brands fa-python"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>The Joy of Computing using Python (NPTEL)</h4>
+                                    <p>Score: 84% | Problem-solving and programming fundamentals using Python.</p>
+                                </div>
+                            </div>
+
+                            <!-- Cert 3: NPTEL Soft Skills -->
+                            <div class="cert-card glass">
+                                <div class="cert-icon">
+                                    <i class="fa-regular fa-comments"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Enhancing Soft Skills and Personality (NPTEL)</h4>
+                                    <p>Score: 78% | Communication, interpersonal, and professional development skills.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">03 / Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid scroll-reveal">
+
+                    <!-- Skill Category 1 -->
+                    <div class="skill-category glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h3>Development & Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>HTML5</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>CSS3</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>JavaScript</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 2 -->
+                    <div class="skill-category glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-robot"></i>
+                            <h3>AI & Prompt Engineering</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>Prompt Engineering</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>Antigravity</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>Others</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 3 -->
+                    <div class="skill-category glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-sliders"></i>
+                            <h3>Tools & Systems</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>Git & GitHub</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>Linux Commands</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta">
+                                    <span>PowerPoint & Google Sheets</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Interactive Mini Skills Tag Cloud -->
+                <div class="skills-badges-wrapper scroll-reveal">
+                    <h4>Core Badges</h4>
+                    <div class="badges-container">
+                        <span class="badge-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="badge-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="badge-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="badge-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="badge-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="badge-tag"><i class="fa-solid fa-robot"></i> Prompt Engineering</span>
+                        <span class="badge-tag"><i class="fa-brands fa-linux"></i> Linux</span>
+                        <span class="badge-tag"><i class="fa-solid fa-terminal"></i> Antigravity</span>
+                        <span class="badge-tag"><i class="fa-regular fa-file-powerpoint"></i> PowerPoint</span>
+                        <span class="badge-tag"><i class="fa-regular fa-file-excel"></i> Google Sheets</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section section-alt">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">04 / Portfolio</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-grid grid-3">
+
+
+
+                    <!-- Project 1: Real-Time User Management System -->
+                    <article class="project-card glass scroll-reveal" style="animation-delay: 0.1s;">
+                        <div class="project-img-container">
+                            <div class="project-overlay-gradient"></div>
+                            <i class="fa-solid fa-users project-placeholder-icon"></i>
+                            <div class="project-tech-tags">
+                                <span>React.js</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Real-Time User Management System</h3>
+                            <p>Web application for managing user records with real-time updates and interactive
+                                administration features.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ArcSubash/usr-management" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i>
+                                    Code</a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Landing Page -->
+                    <article class="project-card glass scroll-reveal">
+                        <div class="project-img-container">
+                            <div class="project-overlay-gradient"></div>
+                            <i class="fa-solid fa-rocket project-placeholder-icon"></i>
+                            <div class="project-tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Interactive Landing Pages</h3>
+                            <p>Responsive landing page built with HTML, CSS, and JavaScript, designed with a modern
+                                interface and smooth layouts.</p>
+                            <div class="project-links">
+
+
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Expense Tracker -->
+                    <article class="project-card glass scroll-reveal" style="animation-delay: 0.2s;">
+                        <div class="project-img-container">
+                            <div class="project-overlay-gradient"></div>
+                            <i class="fa-solid fa-wallet project-placeholder-icon"></i>
+                            <div class="project-tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Expense Tracker</h3>
+                            <p>Web-based tool for tracking and managing personal expenses with structured visualization
+                                and clean reports.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ArcSubash/Exptracker" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i>
+                                    Code</a>
+                                <a href="https://exptrack.subash11rc.workers.dev" target="_blank" class="proj-link"><i
+                                        class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Portfolio Website -->
+                    <article class="project-card glass scroll-reveal">
+                        <div class="project-img-container">
+                            <div class="project-overlay-gradient"></div>
+                            <i class="fa-solid fa-user-tie project-placeholder-icon"></i>
+                            <div class="project-tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Personal portfolio site showcasing my projects, skills, education, and credentials using
+                                a sleek theme.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ArcSubash" target="_blank" rel="noopener noreferrer"
+                                    class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#" class="proj-link"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Resume Shortlister -->
+                    <article class="project-card glass scroll-reveal" style="animation-delay: 0.1s;">
+                        <div class="project-img-container">
+                            <div class="project-overlay-gradient"></div>
+                            <i class="fa-solid fa-file-invoice project-placeholder-icon"></i>
+                            <div class="project-tech-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>AI</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Resume Shortlister</h3>
+                            <p>Web app with AI-powered analysis to rank and shortlist resumes, built with HTML, CSS, and
+                                JavaScript.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ArcSubash/ResumeShortlister" target="_blank"
+                                    rel="noopener noreferrer" class="proj-link"><i class="fa-brands fa-github"></i>
+                                    Code</a>
+
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-tag">05 / Connection</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-wrapper grid-2">
+
+                    <!-- Contact Info Block -->
+                    <div class="contact-info-block scroll-reveal scroll-reveal-left">
+                        <h3>Let's build something together!</h3>
+                        <p class="contact-invite-text">
+                            I am open to collaboration opportunities, internship proposals, and full stack
+                            developer/cybersecurity
+                            roles. Feel free to drop a message or reach out via my socials.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-card glass">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Email Me</h4>
+                                    <p><a href="mailto:subash11rc@gmail.com">subash11rc@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-card glass">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Chennai, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-icons">
+                            <a href="https://github.com/ArcSubash" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/subash11rc/" target="_blank" rel="noopener noreferrer"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Block -->
+                    <div class="contact-form-block glass scroll-reveal scroll-reveal-right">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Collaboration"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Hi Subash, I would love to..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit-btn">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div class="form-message" id="form-message"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Subash B. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+            </div>
+        </div>
+        <!-- Scroll To Top Button -->
+        <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
