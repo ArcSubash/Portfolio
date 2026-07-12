@@ -254,9 +254,11 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-circle-notch fa-spin"></i>';
 
             // Access Web3Forms API Key from environment variables
-            let accessKey = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
-                ? import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
-                : '';
+            let accessKey = typeof window !== 'undefined' && window.APP_CONFIG && window.APP_CONFIG.VITE_WEB3FORMS_ACCESS_KEY
+                ? window.APP_CONFIG.VITE_WEB3FORMS_ACCESS_KEY
+                : (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+                    ? import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+                    : '');
 
             // Fallback for static file loading: fetch the local .env file dynamically
             if (!accessKey) {
