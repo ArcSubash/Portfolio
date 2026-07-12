@@ -55,7 +55,7 @@ No compilation, bundler, or web server setup is required to run the portfolio:
 
 ### Option 1: Open Locally
 1. Download or clone this repository.
-2. Navigate to the `webDev-L1-PersonalPortfolio` directory.
+2. Navigate to the `Personal Portfolio` directory.
 3. Double-click `index.html` to open it directly in your web browser of choice.
 
 ### Option 2: Run a Local HTTP Server
